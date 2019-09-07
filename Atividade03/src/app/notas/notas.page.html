@@ -2,14 +2,14 @@
         
   <p>{{ titulo }}</p>
   <ion-grid>
-    <ion-row * ngFor = "let note of notes">
-        <ion-col> {{nota.disciplina}} </ion-col>
-        <ion-col> {{nota.a1}} </ion-col>
-        <ion-col> {{nota.a2}} </ion-col>
-        <ion-col> {{nota.a3}} </ion-col>
-        <ion-col> {{nota.edad}} </ion-col>
-        <ion-col> {{nota.media}} </ion-col>
-      </ion-row>
+      <ion-row *ngFor="let nota of notas">
+          <ion-col>{{ nota.disciplina }} </ion-col>
+          <ion-col>{{ nota.a1 }} </ion-col>
+          <ion-col>{{ nota.a2 }} </ion-col>
+          <ion-col>{{ nota.a3 }} </ion-col>
+          <ion-col>{{ nota.edad }} </ion-col>
+          <ion-col>{{ nota.media }} </ion-col>
+        </ion-row>
   </ion-grid>
   <div class="ion-padding">
       <p>Voltar para  <a href="../home">home </a></p>
