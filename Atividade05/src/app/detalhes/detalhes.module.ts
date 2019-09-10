@@ -25,3 +25,7 @@ const routes: Routes = [
   declarations: [DetalhesPage]
 })
 export class DetalhesPageModule {id='null'}
+
+
+
+
