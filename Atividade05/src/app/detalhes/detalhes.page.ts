@@ -8,8 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetalhesPage implements OnInit {
 id=null;
-  activatedRoute: any;
-  constructor(private enabledRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     this.id = this.activatedRoute.snapshot.paramMap.get('id');
