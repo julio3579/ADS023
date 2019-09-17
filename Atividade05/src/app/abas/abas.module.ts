@@ -9,8 +9,25 @@ import { AbasPage } from './abas.page';
 
 const routes: Routes = [
   {
+    path: '', redirectTo: '/abas/aba1', pathMatch: 'full'
+  },
+  {
     path: '',
-    component: AbasPage
+    component: AbasPage,
+    children: [
+      {
+        path: 'aba1',
+        loadChildren: './aba1/aba1.module#Aba1PageModule'
+      },
+      {
+        path: 'aba2',
+        loadChildren: './aba2/aba2.module#Aba2PageModule'
+      },
+      {
+        path: 'aba3',
+        loadChildren: './aba3/aba3.module#Aba3PageModule'
+      }
+    ]
   }
 ];
 
@@ -23,4 +40,4 @@ const routes: Routes = [
   ],
   declarations: [AbasPage]
 })
-export class AbasPageModule {}
+export class AbasPageModule { }
